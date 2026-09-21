@@ -1,0 +1,23 @@
+.DS_Store
+**/.DS_Store
+
+# Xcode / Swift (when swiftui-lab is scaffolded)
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+Package.resolved
+
+# Local noise
+*.playground
+.idea/
+.vscode/
+.env
+.env.*

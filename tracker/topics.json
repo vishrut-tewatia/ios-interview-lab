@@ -1,0 +1,438 @@
+{
+  "version": 2,
+  "role": "Senior iOS / SDE-2, India, 4+ YOE",
+  "living": true,
+  "note": "Intentionally vast. Add a row when a real question has no home. Daily 3 walks pick_order, 3 not_started items at a time. Super-important stays a short card list, not this whole file.",
+  "status_values": ["not_started", "in_progress", "drilled", "starred"],
+  "pick_order": [
+    "swift-fundamentals",
+    "swift-advanced",
+    "memory-arc",
+    "objc-interop",
+    "uikit-lifecycle-layout",
+    "uikit-lists-scroll",
+    "uikit-app-navigation",
+    "concurrency",
+    "combine",
+    "swiftui",
+    "architecture",
+    "networking-persistence",
+    "performance",
+    "security-release",
+    "testing-tooling",
+    "lld",
+    "hld",
+    "dsa",
+    "swiftui-lab",
+    "behavioral"
+  ],
+  "tracks": [
+    {
+      "id": "swift-fundamentals",
+      "title": "Swift fundamentals (tricky language)",
+      "items": [
+        { "id": "optionals-anatomy", "title": "Optional as enum; none vs some; why nil is not a type", "status": "not_started" },
+        { "id": "if-let-guard", "title": "if let vs guard let; early exit; shadowing", "status": "not_started" },
+        { "id": "force-unwrap", "title": "Force unwrap (!) — when it is a crash, when interviewers accept it", "status": "not_started" },
+        { "id": "iuo", "title": "Implicitly unwrapped optionals; IBOutlets; why IUO is not a normal optional", "status": "not_started" },
+        { "id": "optional-chaining-coalesce", "title": "Optional chaining vs ?? vs ?? with throw-style fallbacks", "status": "not_started" },
+        { "id": "optional-map-flatmap", "title": "Optional map / flatMap vs Sequence compactMap", "status": "not_started" },
+        { "id": "value-vs-class", "title": "Struct vs class vs enum; identity vs value; when a class is required", "status": "not_started" },
+        { "id": "cow", "title": "Copy-on-write: Array/String/Dictionary; isKnownUniquelyReferenced", "status": "not_started" },
+        { "id": "mutating-struct", "title": "mutating methods; let vs var struct; mutating in closures", "status": "not_started" },
+        { "id": "enum-associated", "title": "Enums, associated values, raw values, indirect, Equatable synthesis", "status": "not_started" },
+        { "id": "tuples-never-void", "title": "Void, Never, tuples as types", "status": "not_started" },
+        { "id": "closures-capture", "title": "Closure capture lists; strong/weak/unowned; capturing mutating state", "status": "not_started" },
+        { "id": "escaping-nonescaping", "title": "@escaping vs non-escaping; why self rules differ", "status": "not_started" },
+        { "id": "autoclosure", "title": "@autoclosure; assert/precondition; short-circuit", "status": "not_started" },
+        { "id": "trailing-closure-multiple", "title": "Trailing closures; multiple trailing; callback vs async style", "status": "not_started" },
+        { "id": "function-types", "title": "Function types, () -> Void vs (() -> Void)?; @convention", "status": "not_started" },
+        { "id": "inout-defer", "title": "inout, copy-in copy-out; defer order", "status": "not_started" },
+        { "id": "access-control", "title": "private vs fileprivate vs internal vs public vs open; package", "status": "not_started" },
+        { "id": "init-rules", "title": "Designated vs convenience; required; failable init; init? vs init!", "status": "not_started" },
+        { "id": "class-inheritance", "title": "final, override, super, two-phase init, deinit", "status": "not_started" },
+        { "id": "protocols-basics", "title": "Protocols, extensions, default implementations, retroactive modeling", "status": "not_started" },
+        { "id": "protocol-composition", "title": "Protocol composition; AnyObject protocols; class-only", "status": "not_started" },
+        { "id": "protocol-delegate-datasource", "title": "Delegate / dataSource protocols; optional @objc methods vs Swift-only required", "status": "not_started" },
+        { "id": "protocol-extension-dispatch", "title": "Static vs dynamic dispatch on protocol extensions (the classic ‘wrong method ran’ question)", "status": "not_started" },
+        { "id": "pop-vs-inheritance", "title": "Protocol-oriented programming vs class inheritance; when a class still wins", "status": "not_started" },
+        { "id": "protocol-self-mutating", "title": "Self requirements, mutating in protocols, static factory on protocol", "status": "not_started" },
+        { "id": "equatable-hashable", "title": "Equatable, Hashable, Hasher; Set/Dictionary keys; synthesis vs custom", "status": "not_started" },
+        { "id": "comparable-codable", "title": "Comparable; Codable synthesis, CodingKeys, nested containers", "status": "not_started" },
+        { "id": "error-throws", "title": "Error, throws, try/try?/try!, localizedDescription traps", "status": "not_started" },
+        { "id": "result-type", "title": "Result vs throws; when Result still wins (stored, multiple callbacks)", "status": "not_started" },
+        { "id": "collections-array-set-dict", "title": "Array vs ContiguousArray vs Set vs Dictionary; complexity", "status": "not_started" },
+        { "id": "hof-what", "title": "Higher-order functions: a function that takes/returns a function; why map is one", "status": "not_started" },
+        { "id": "map-compactmap-flatmap", "title": "map vs compactMap vs flatMap on Sequence; deprecated flatMap-for-optional", "status": "not_started" },
+        { "id": "hof-filter-sort-zip", "title": "filter, sorted(by:), forEach, contains, first(where:), zip, enumerated, prefix/drop, partition", "status": "not_started" },
+        { "id": "reduce-lazy", "title": "reduce / reduce(into:), lazy sequences, when lazy actually helps", "status": "not_started" },
+        { "id": "hof-custom", "title": "Write your own HOF (e.g. compactMap-style, retry, or applying a transform to Result)", "status": "not_started" },
+        { "id": "sequence-iterator", "title": "Sequence, IteratorProtocol, for-in desugaring", "status": "not_started" },
+        { "id": "string-index-unicode", "title": "String.Index, Character vs CharacterView, Unicode scalars, count vs utf8.count", "status": "not_started" },
+        { "id": "pattern-matching", "title": "switch, where, if case, for case, ~=", "status": "not_started" },
+        { "id": "optional-pattern", "title": "Matching optionals in switch; x? vs .some", "status": "not_started" },
+        { "id": "subscripts-keypaths", "title": "Subscripts; KeyPath, WritableKeyPath, \\Root.value", "status": "not_started" },
+        { "id": "type-casting", "title": "is, as, as?, as!; Any vs AnyObject; bridging to NSObject", "status": "not_started" },
+        { "id": "available-deprecated", "title": "@available, #available, deprecated APIs, @backDeployed", "status": "not_started" },
+        { "id": "compiler-control", "title": "#if, canImport, targetEnvironment, swift(>=)", "status": "not_started" },
+        { "id": "property-observers", "title": "willSet/didSet vs computed; lazy var traps (thread, cycles)", "status": "not_started" },
+        { "id": "static-class-type", "title": "static vs class; Self; metatypes SomeType.Type", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "swift-advanced",
+      "title": "Swift advanced",
+      "items": [
+        { "id": "some-vs-any", "title": "some vs any; reverse generics vs existentials; performance cost", "status": "not_started" },
+        { "id": "generics-where", "title": "Generic functions vs generic types; type parameters; where clauses", "status": "not_started" },
+        { "id": "generic-constraints", "title": "Constraints (T: Equatable), protocol + class bounds, associatedtype constraints", "status": "not_started" },
+        { "id": "generic-vs-any", "title": "Generic T: Protocol vs any Protocol — specialization vs boxing; which to pick", "status": "not_started" },
+        { "id": "associated-types", "title": "Associated types, PAT, why you cannot always use Protocol as a type", "status": "not_started" },
+        { "id": "type-erasure", "title": "Type erasure (AnySequence-style); when AnyXxx is justified", "status": "not_started" },
+        { "id": "opaque-result", "title": "Opaque result types vs generic return; some View", "status": "not_started" },
+        { "id": "property-wrappers", "title": "Property wrappers: wrappedValue, projectedValue, compiler desugaring", "status": "not_started" },
+        { "id": "result-builders", "title": "Result builders; ViewBuilder buildBlock/buildEither/buildOptional", "status": "not_started" },
+        { "id": "macros", "title": "Swift macros: attached vs freestanding; what @Observable is doing", "status": "not_started" },
+        { "id": "existentials-box", "title": "Existential container, witness table, opening existentials", "status": "not_started" },
+        { "id": "variadic-generics", "title": "Parameter packs (high level: what problem they solve)", "status": "not_started" },
+        { "id": "ownership", "title": "consuming/borrowing, noncopyable types — interview-level awareness", "status": "not_started" },
+        { "id": "unsafe-memory", "title": "UnsafePointer / withUnsafeBytes — when you would actually touch this", "status": "not_started" },
+        { "id": "mirror", "title": "Mirror / reflection — why production code mostly should not", "status": "not_started" },
+        { "id": "dynamic-member", "title": "@dynamicMemberLookup, @dynamicCallable", "status": "not_started" },
+        { "id": "operator-overload", "title": "Custom operators, precedence; Equatable == in extensions", "status": "not_started" },
+        { "id": "swift-6-mode", "title": "Swift 6 language mode; targeted vs complete concurrency checking", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "memory-arc",
+      "title": "Memory and ARC",
+      "items": [
+        { "id": "arc-basics", "title": "ARC vs GC vs MRC; retain count; when deinit runs", "status": "not_started" },
+        { "id": "retain-cycles-closures", "title": "Retain cycles with closures, nested closures, escaping stored closures", "status": "not_started" },
+        { "id": "retain-cycles-delegates", "title": "Delegate should be weak; why NSObject protocol delegates are AnyObject", "status": "not_started" },
+        { "id": "weak-vs-unowned", "title": "weak vs unowned vs unowned(unsafe); crash vs nil; lifetime contracts", "status": "not_started" },
+        { "id": "cycles-timer-notif", "title": "Timer, NotificationCenter, CADisplayLink, Combine sink cycles", "status": "not_started" },
+        { "id": "autoreleasepool", "title": "Autorelease pool; tight loops creating UIImage/Data; @autoreleasepool", "status": "not_started" },
+        { "id": "leaks-vs-abandoned", "title": "Leaks vs abandoned memory vs high watermark; Instruments Leaks vs Allocations", "status": "not_started" },
+        { "id": "stack-heap", "title": "Stack vs heap; when value types heap-allocate; existential boxing", "status": "not_started" },
+        { "id": "unowned-self-crash", "title": "unowned self in async callback after VC dismissed — classic crash", "status": "not_started" },
+        { "id": "cf-bridging", "title": "CF types, Unmanaged, takeRetainedValue vs takeUnretainedValue", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "objc-interop",
+      "title": "Objective-C runtime and interop",
+      "items": [
+        { "id": "objc-dynamic", "title": "@objc, dynamic, @objcMembers; what Swift cannot expose", "status": "not_started" },
+        { "id": "selectors-target-action", "title": "Selector, #selector, target-action vs Swift closures", "status": "not_started" },
+        { "id": "nsobject-kvo", "title": "NSObject, KVO, KVC; observe(\\:) vs old observeValue", "status": "not_started" },
+        { "id": "associated-objects", "title": "objc_setAssociatedObject — storing extra state on UIKit types", "status": "not_started" },
+        { "id": "swizzling", "title": "Method swizzling: how it works, why seniors almost never ship it", "status": "not_started" },
+        { "id": "bridging-swift-objc", "title": "Swift ↔ ObjC bridging: Array/NSArray, String/NSString, optional nullability", "status": "not_started" },
+        { "id": "nserror-nsnull", "title": "NSError bridging, NSNull in collections from JSON", "status": "not_started" },
+        { "id": "responder-objc", "title": "Responder chain + UIApplication.sendAction", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "uikit-lifecycle-layout",
+      "title": "UIKit — lifecycle, view, layout",
+      "items": [
+        { "id": "vc-lifecycle-order", "title": "UIViewController lifecycle order (load → appear → layout → disappear → deinit)", "status": "not_started" },
+        { "id": "loadview-vs-viewdidload", "title": "loadView vs viewDidLoad vs viewDidAppear — what belongs where", "status": "not_started" },
+        { "id": "view-loaded-isviewloaded", "title": "isViewLoaded; touching view in init; storyboard vs code", "status": "not_started" },
+        { "id": "appear-disappear", "title": "viewWillAppear / DidAppear / WillDisappear / DidDisappear; isMovingToParent / isBeingPresented", "status": "not_started" },
+        { "id": "layout-callbacks", "title": "viewWillLayoutSubviews / viewDidLayoutSubviews — measuring after Auto Layout", "status": "not_started" },
+        { "id": "viewwilltransition", "title": "viewWillTransition, traitCollectionDidChange, size-class flips", "status": "not_started" },
+        { "id": "memory-warning", "title": "didReceiveMemoryWarning vs today; image caches", "status": "not_started" },
+        { "id": "uiview-lifecycle", "title": "UIView: init(frame), init(coder), layoutSubviews, draw, didMoveToWindow", "status": "not_started" },
+        { "id": "frame-bounds-center", "title": "frame vs bounds vs center; bounds origin after scroll; transform", "status": "not_started" },
+        { "id": "autolayout-constraints", "title": "NSLayoutConstraint; anchors; required vs optional priority (1000 vs 999)", "status": "not_started" },
+        { "id": "hugging-compression", "title": "Content hugging vs compression resistance; intrinsicContentSize", "status": "not_started" },
+        { "id": "setneedslayout", "title": "setNeedsLayout vs layoutIfNeeded vs setNeedsDisplay vs layoutSubviews", "status": "not_started" },
+        { "id": "safe-area", "title": "safeAreaInsets, additionalSafeAreaInsets, keyboard + home indicator", "status": "not_started" },
+        { "id": "trait-collection", "title": "UITraitCollection, size classes, display scale, userInterfaceStyle", "status": "not_started" },
+        { "id": "child-vc", "title": "Child VC containment (addChild, didMove, willMove) vs addSubview-only bug", "status": "not_started" },
+        { "id": "hit-testing", "title": "hitTest, point(inside:), userInteractionEnabled, clipsToBounds", "status": "not_started" },
+        { "id": "responder-chain-uikit", "title": "Responder chain: view → VC → window → app", "status": "not_started" },
+        { "id": "gestures", "title": "UIGestureRecognizer, fail/require-to-fail, simultaneous, cancelsTouches", "status": "not_started" },
+        { "id": "draw-calayer", "title": "draw(_:), contents, shouldRasterize, offscreen render, opaque, blending", "status": "not_started" },
+        { "id": "uicolor-dynamic", "title": "Dynamic colors, CGColor snapshot trap, trait-dependent images", "status": "not_started" },
+        { "id": "keyboard", "title": "Keyboard notifications, first responder, inputAccessoryView, IQKeyboard-class issues", "status": "not_started" },
+        { "id": "uicontrol", "title": "UIControl events, addAction vs addTarget, UIButton.Configuration", "status": "not_started" },
+        { "id": "accessibility-uikit", "title": "VoiceOver, accessibilityLabel/Value/Traits, frame in screen coords", "status": "not_started" },
+        { "id": "dynamic-type-uikit", "title": "Dynamic Type, adjustsFontForContentSizeCategory, self-sizing cells", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "uikit-lists-scroll",
+      "title": "UIKit — TableView, CollectionView, scroll",
+      "items": [
+        { "id": "table-reuse", "title": "UITableView cell reuse; prepareForReuse; why dequeue is required", "status": "not_started" },
+        { "id": "table-datasource-delegate", "title": "dataSource vs delegate split; numberOfRows vs cellForRow vs willDisplay", "status": "not_started" },
+        { "id": "cell-lifecycle", "title": "Cell lifecycle: init/awakeFromNib → configure → display → endDisplay → reuse", "status": "not_started" },
+        { "id": "heights-estimated", "title": "rowHeight vs estimatedRowHeight vs UITableView.automaticDimension; prototype cells", "status": "not_started" },
+        { "id": "self-sizing-traps", "title": "Self-sizing traps: missing bottom constraint, multi-line label, layoutIfNeeded in cellForRow", "status": "not_started" },
+        { "id": "indexpath-invalidation", "title": "Reloading while scrolling; stale IndexPath; performBatchUpdates", "status": "not_started" },
+        { "id": "prefetch-table", "title": "UITableViewDataSourcePrefetching; cancel prefetch; image download", "status": "not_started" },
+        { "id": "diffable-table", "title": "UITableViewDiffableDataSource; identifiers must be stable Hashable", "status": "not_started" },
+        { "id": "editing-swipe", "title": "Editing mode, swipe actions, leading/trailing, contextual actions", "status": "not_started" },
+        { "id": "headers-footers", "title": "Section headers/footers; sticky header; estimatedSectionHeaderHeight", "status": "not_started" },
+        { "id": "collection-basics", "title": "UICollectionView vs table; flow layout vs compositional", "status": "not_started" },
+        { "id": "compositional-layout", "title": "UICollectionViewCompositionalLayout: item/group/section, orthogonal scrolling", "status": "not_started" },
+        { "id": "diffable-collection", "title": "UICollectionViewDiffableDataSource + supplementary views", "status": "not_started" },
+        { "id": "uiscrollview", "title": "contentSize, contentOffset, contentInset, adjustedContentInset, deceleration", "status": "not_started" },
+        { "id": "scroll-pagination", "title": "Infinite scroll: distance-from-bottom, debounce, duplicate page requests", "status": "not_started" },
+        { "id": "scroll-performance", "title": "Scroll jank: main-thread decode, shadows, offscreen, cell complexity, opaque", "status": "not_started" },
+        { "id": "nested-scroll", "title": "Nested scroll views / pager + table; gesture conflicts", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "uikit-app-navigation",
+      "title": "UIKit — navigation, windows, app lifecycle",
+      "items": [
+        { "id": "nav-controller", "title": "UINavigationController stack, interactive pop, hidesBars, UINavigationBar appearance", "status": "not_started" },
+        { "id": "push-vs-present", "title": "push vs present; presentation styles; adaptive popover/pageSheet", "status": "not_started" },
+        { "id": "modal-lifecycle", "title": "Presenting VC lifecycle vs presented; isBeingDismissed", "status": "not_started" },
+        { "id": "tab-controller", "title": "UITabBarController; selectedIndex; more nav; badges", "status": "not_started" },
+        { "id": "split-controller", "title": "UISplitViewController columns; compact collapse", "status": "not_started" },
+        { "id": "window-scene", "title": "UIWindow, UIWindowScene, key window; iPad multi-window", "status": "not_started" },
+        { "id": "app-lifecycle-uikit", "title": "Not running → inactive → active → background → suspended → terminated", "status": "not_started" },
+        { "id": "appdelegate-vs-scene", "title": "AppDelegate vs SceneDelegate; why scene callbacks exist; SwiftUI App", "status": "not_started" },
+        { "id": "willconnect-options", "title": "scene willConnect, connectionOptions (URLs, notification, shortcut)", "status": "not_started" },
+        { "id": "background-tasks-uikit", "title": "beginBackgroundTask, expiration; vs BGTaskScheduler", "status": "not_started" },
+        { "id": "state-restoration", "title": "State restoration / user activity — awareness", "status": "not_started" },
+        { "id": "storyboard-vs-code", "title": "Storyboard/XIB vs code; segue pitfalls; instantiate VC", "status": "not_started" },
+        { "id": "coordinator-uikit", "title": "Coordinator pattern on UIKit nav; why VCs should not present the world", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "concurrency",
+      "title": "Concurrency and threading",
+      "items": [
+        { "id": "main-thread-rule", "title": "UI on main; what actually must be main (UIKit vs thread-safe types)", "status": "not_started" },
+        { "id": "gcd-queues", "title": "Serial vs concurrent queues; main vs global; QoS; target queue", "status": "not_started" },
+        { "id": "gcd-sync-deadlock", "title": "sync on same serial/main queue deadlock", "status": "not_started" },
+        { "id": "gcd-barriers", "title": "Dispatch barrier: concurrent reads, serial writes", "status": "not_started" },
+        { "id": "gcd-groups-semaphores", "title": "DispatchGroup enter/leave/notify vs wait; DispatchSemaphore — deadlock with main/async", "status": "not_started" },
+        { "id": "async-let", "title": "async let for a fixed 2–3 calls vs sequential await; cancellation of child tasks", "status": "not_started" },
+        { "id": "operation-queue", "title": "Operation, OperationQueue, dependencies, cancellation, maxConcurrent", "status": "not_started" },
+        { "id": "locks", "title": "NSLock, NSRecursiveLock, os_unfair_lock, actor vs lock", "status": "not_started" },
+        { "id": "thread-explosion", "title": "Thread explosion from concurrent queues + blocking work", "status": "not_started" },
+        { "id": "async-await", "title": "async/await, suspension, Task, structured vs unstructured", "status": "not_started" },
+        { "id": "async-vs-combine", "title": "async/await vs callbacks vs Combine — pick with a reason", "status": "not_started" },
+        { "id": "actors-mainactor", "title": "actor isolation, @MainActor, hopping, UI updates", "status": "not_started" },
+        { "id": "sendable", "title": "Sendable, @unchecked Sendable, value types vs classes", "status": "not_started" },
+        { "id": "task-groups", "title": "Task groups, withTaskGroup, throwing, cancellation propagation", "status": "not_started" },
+        { "id": "task-cancel", "title": "Task.checkCancellation, isCancelled; cancel on view disappear", "status": "not_started" },
+        { "id": "actor-reentrancy", "title": "Actor reentrancy: await yields; broken invariants", "status": "not_started" },
+        { "id": "continuations", "title": "CheckedContinuation; wrapping callback APIs; resume exactly once", "status": "not_started" },
+        { "id": "unstructured-task", "title": "Task {} vs Task.detached; inherited actor/priority; leaks", "status": "not_started" },
+        { "id": "asyncsequence", "title": "AsyncSequence, AsyncStream; vs Combine publishers", "status": "not_started" },
+        { "id": "data-races", "title": "Data race vs race condition; Thread Sanitizer", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "combine",
+      "title": "Combine (still asked)",
+      "items": [
+        { "id": "publisher-subscriber", "title": "Publisher, Subscriber, Subscription, Demand", "status": "not_started" },
+        { "id": "anycancellable", "title": "AnyCancellable, store(in:), cancel on deinit", "status": "not_started" },
+        { "id": "subject-passthrough-current", "title": "PassthroughSubject vs CurrentValueSubject vs @Published", "status": "not_started" },
+        { "id": "operators-map-flatmap", "title": "map, flatMap, switchToLatest, compactMap, debounce, throttle, removeDuplicates", "status": "not_started" },
+        { "id": "combine-zip-merge", "title": "zip / combineLatest / merge — wait for N publishers vs fire as they arrive", "status": "not_started" },
+        { "id": "schedulers", "title": "receive(on:) vs subscribe(on:); RunLoop vs DispatchQueue", "status": "not_started" },
+        { "id": "share-multicast", "title": "share(), multicast, when a pipeline is cold vs hot", "status": "not_started" },
+        { "id": "error-catch", "title": "setFailureType, catch, retry, replaceError", "status": "not_started" },
+        { "id": "combine-vs-async", "title": "When Combine is the right tool in 2026 (streams) vs async", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "swiftui",
+      "title": "SwiftUI (interview + lab overlap)",
+      "items": [
+        { "id": "view-struct", "title": "View as a value; body identity vs lifetime of @State", "status": "not_started" },
+        { "id": "state-ownership", "title": "@State, Binding, @Bindable; source of truth rules", "status": "not_started" },
+        { "id": "observable", "title": "@Observable vs ObservableObject / @StateObject / @ObservedObject / @EnvironmentObject", "status": "not_started" },
+        { "id": "environment", "title": "Environment values vs objects; custom EnvironmentKey", "status": "not_started" },
+        { "id": "view-identity", "title": "id(_:), ForEach identity, @State reset when identity changes", "status": "not_started" },
+        { "id": "invalidation", "title": "What invalidates body; EquatableView; splitting views", "status": "not_started" },
+        { "id": "property-wrappers-sui", "title": "SwiftUI wrappers vs your own; $ projection", "status": "not_started" },
+        { "id": "layout-sui", "title": "Layout: proposed size, stacks, frame, layoutPriority, Layout protocol", "status": "not_started" },
+        { "id": "geometryreader", "title": "GeometryReader pitfalls (expands, extra layout pass)", "status": "not_started" },
+        { "id": "preferencekey", "title": "PreferenceKey, overlay/background measurement", "status": "not_started" },
+        { "id": "lists-sui", "title": "List vs LazyVStack vs ScrollView; diffing; stable ids", "status": "not_started" },
+        { "id": "navigation-sui", "title": "NavigationStack path, NavigationLink, deep link into path", "status": "not_started" },
+        { "id": "sheets-alerts", "title": "sheet/fullScreenCover item: vs isPresented; alert identity", "status": "not_started" },
+        { "id": "animation", "title": "withAnimation, transaction, animation on modifier vs value, matchedGeometryEffect", "status": "not_started" },
+        { "id": "task-modifier", "title": ".task / .onAppear; cancellation; id: re-run", "status": "not_started" },
+        { "id": "interop-sui", "title": "UIViewRepresentable, UIViewControllerRepresentable, coordinator, updateUIView", "status": "not_started" },
+        { "id": "hosting", "title": "UIHostingController in a UIKit app; sizing; nav bar; ignoreSafeArea", "status": "not_started" },
+        { "id": "when-uikit", "title": "When UIKit still wins (collection complexity, mature custom transitions, maps/camera)", "status": "not_started" },
+        { "id": "a11y-sui", "title": "SwiftUI accessibility, accessibilityRepresentation, Dynamic Type", "status": "not_started" },
+        { "id": "previews", "title": "Previews, sample data, previewing Observation vs mock protocols", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture and modularization",
+      "items": [
+        { "id": "mvc-problems", "title": "Massive VC; what MVC actually meant on iOS", "status": "not_started" },
+        { "id": "mvvm", "title": "MVVM with UIKit and with SwiftUI; testable VM; input/output", "status": "not_started" },
+        { "id": "mvp-viper-ribs", "title": "MVP, VIPER, RIBs — costs (boilerplate) vs team size", "status": "not_started" },
+        { "id": "tca", "title": "TCA awareness: unidirectional state, when not to use it", "status": "not_started" },
+        { "id": "clean-boundaries", "title": "Clean / hexagonal: entities vs frameworks; protocols at boundaries", "status": "not_started" },
+        { "id": "coordinator-nav", "title": "Coordinators vs SwiftUI path as SoT", "status": "not_started" },
+        { "id": "di", "title": "Dependency injection: initializer vs environment vs service locator (singleton cost)", "status": "not_started" },
+        { "id": "singleton-thread", "title": "Singleton thread safety; why network/session singletons get grilled", "status": "not_started" },
+        { "id": "spm-modules", "title": "SPM feature modules; API surface; build times; binary size", "status": "not_started" },
+        { "id": "cocoapods-spm-xcframework", "title": "CocoaPods vs SPM vs XCFramework; vendoring", "status": "not_started" },
+        { "id": "feature-flags-arch", "title": "Feature flags as architecture; kill switch; module isolation", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "networking-persistence",
+      "title": "Networking, data, persistence",
+      "items": [
+        { "id": "urlsession", "title": "URLSession, configuration types, delegate vs async, background session", "status": "not_started" },
+        { "id": "http-request-model", "title": "HTTP methods, headers, status codes, request builder, mapping errors (4xx/5xx/decode/timeout)", "status": "not_started" },
+        { "id": "codable-pitfalls", "title": "Codable: dates, snake_case, nested, lossy arrays, JSON null", "status": "not_started" },
+        { "id": "parallel-api-calls", "title": "N API calls at once, wait for all: DispatchGroup vs async let vs TaskGroup vs Combine zip — pick with a reason", "status": "not_started" },
+        { "id": "dependent-api-calls", "title": "Dependent calls (B needs A’s id); don’t parallelize; flatten vs nested callbacks vs async", "status": "not_started" },
+        { "id": "partial-failure-apis", "title": "One of N calls fails: fail-all vs partial UI vs retry that one; TaskGroup error aggregation", "status": "not_started" },
+        { "id": "cancel-inflight", "title": "Cancel in-flight URLSessionTask / Task when VC dies or query changes", "status": "not_started" },
+        { "id": "reachability", "title": "NWPathMonitor vs old Reachability; offline UX vs failing the request", "status": "not_started" },
+        { "id": "auth-refresh", "title": "Token refresh races; single-flight; 401 loops", "status": "not_started" },
+        { "id": "retry-idempotency", "title": "Retry policy; idempotency keys (payments)", "status": "not_started" },
+        { "id": "urlcache-etag", "title": "URLCache, ETag, Cache-Control, 304", "status": "not_started" },
+        { "id": "image-pipeline", "title": "Image download: decode off main, downsample, cancel, placeholder", "status": "not_started" },
+        { "id": "websocket-poll", "title": "WebSocket vs polling vs silent push for live screens", "status": "not_started" },
+        { "id": "userdefaults", "title": "UserDefaults: what not to store; suite; performance; iCloud KVS", "status": "not_started" },
+        { "id": "file-sandbox", "title": "Sandbox directories: documents, caches, tmp; backup exclusion; FileManager", "status": "not_started" },
+        { "id": "keychain-data", "title": "Keychain items, accessibility, iCloud keychain, access groups", "status": "not_started" },
+        { "id": "coredata", "title": "Core Data: contexts, queue concurrency types, faults, migrations", "status": "not_started" },
+        { "id": "swiftdata", "title": "SwiftData vs Core Data; ModelContext; when it is not enough", "status": "not_started" },
+        { "id": "conflicts-sync", "title": "Offline sync conflict resolution (LWW, merge, server wins)", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "performance",
+      "title": "Performance and Instruments",
+      "items": [
+        { "id": "measure-first", "title": "Measure before optimize; 16ms frame budget; what to say in interviews", "status": "not_started" },
+        { "id": "time-profiler", "title": "Instruments Time Profiler: heaviest stack, inversion", "status": "not_started" },
+        { "id": "allocations", "title": "Allocations, persistent vs transient, generations", "status": "not_started" },
+        { "id": "hangs-main-thread", "title": "os_signpost, Hang Detection, Main Thread Checker", "status": "not_started" },
+        { "id": "launch-time", "title": "Cold vs warm launch; +load/+initialize; dyld; first frame", "status": "not_started" },
+        { "id": "binary-size", "title": "App size: bitcode gone, thinning, unused arch, asset catalogs, dead code strip", "status": "not_started" },
+        { "id": "image-cost", "title": "UIImage memory: decode, scale, downsample, renderingMode", "status": "not_started" },
+        { "id": "offscreen-blend", "title": "Offscreen rendering, masks, shadows, cornerRadius + masksToBounds", "status": "not_started" },
+        { "id": "table-perf", "title": "Cell performance checklist (opaque, rasterize caution, async config)", "status": "not_started" },
+        { "id": "energy", "title": "Energy: location, GPS, timers, radios, background fetch budget", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "security-release",
+      "title": "Security, push, background, release",
+      "items": [
+        { "id": "ats", "title": "App Transport Security, exceptions, why they are grilled at fintech", "status": "not_started" },
+        { "id": "ssl-pinning", "title": "Certificate pinning trade-offs; rotation; when not to pin", "status": "not_started" },
+        { "id": "keychain-tokens", "title": "Tokens in Keychain not UserDefaults; data protection classes", "status": "not_started" },
+        { "id": "jailbreak-realism", "title": "Jailbreak/root detection — what it can and cannot do", "status": "not_started" },
+        { "id": "privacy-manifests", "title": "Privacy manifests, tracking, required reason APIs", "status": "not_started" },
+        { "id": "push-apns", "title": "APNs: device token refresh, environments, payload, collapse id", "status": "not_started" },
+        { "id": "push-rich", "title": "Notification service/content extensions; silent push limits", "status": "not_started" },
+        { "id": "deeplink", "title": "URL schemes vs universal links vs applinks; pasteboard; attribution", "status": "not_started" },
+        { "id": "bgtask", "title": "BGAppRefreshTask vs BGProcessingTask; scheduling; rate limits", "status": "not_started" },
+        { "id": "background-modes", "title": "Info.plist background modes; location, audio, voip myth", "status": "not_started" },
+        { "id": "appstore-review", "title": "Review lag, phased release, expedited; entitlements", "status": "not_started" },
+        { "id": "kill-switch", "title": "Remote config + kill switch without blocking launch", "status": "not_started" },
+        { "id": "signing", "title": "Code signing, provisioning, capabilities, CI certs — high level", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "testing-tooling",
+      "title": "Testing, CI, quality",
+      "items": [
+        { "id": "unit-xctest", "title": "XCTest, async tests, expectations vs Swift Testing", "status": "not_started" },
+        { "id": "test-seams", "title": "Testing ViewModels: protocols, fakes vs mocks, time (Clock)", "status": "not_started" },
+        { "id": "snapshot", "title": "Snapshot tests; flakiness; record mode discipline", "status": "not_started" },
+        { "id": "ui-tests", "title": "XCUITest: page objects, launch arguments, why they are slow", "status": "not_started" },
+        { "id": "coverage-ci", "title": "What to cover at senior bar; CI on PRs; Fastlane scan", "status": "not_started" },
+        { "id": "debugging", "title": "LLDB, breakpoints, view debugging, network debugging (proxies)", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "lld",
+      "title": "LLD",
+      "items": [
+        { "id": "image-loader", "title": "Image loader (memory, disk, cancel, decode off main)", "status": "not_started" },
+        { "id": "networking-layer", "title": "Networking layer + single-flight auth refresh", "status": "not_started" },
+        { "id": "lru", "title": "LRU cache (O(1), cost limit, thread safety)", "status": "not_started" },
+        { "id": "rate-limiter", "title": "Rate limiter / token bucket", "status": "not_started" },
+        { "id": "logger-analytics", "title": "Logger / analytics batching + PII redaction", "status": "not_started" },
+        { "id": "pagination-source", "title": "Pagination data source (cursor vs offset, duplicates)", "status": "not_started" },
+        { "id": "feature-flag-client", "title": "Feature-flag client (cached, non-blocking start)", "status": "not_started" },
+        { "id": "coordinator-lld", "title": "Coordinator / router on UIKit", "status": "not_started" },
+        { "id": "debouncer", "title": "Debouncer / search-as-you-type", "status": "not_started" },
+        { "id": "observable-store", "title": "Tiny app store / observer for UIKit (without Combine religion)", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "hld",
+      "title": "HLD (mobile)",
+      "items": [
+        { "id": "feed", "title": "Instagram-like feed", "status": "not_started" },
+        { "id": "order-tracking", "title": "Order tracking (poll vs socket, state machine)", "status": "not_started" },
+        { "id": "offline-news", "title": "Offline-first news", "status": "not_started" },
+        { "id": "chat", "title": "Chat / support client", "status": "not_started" },
+        { "id": "notifications-50m", "title": "Notifications at 50M MAU", "status": "not_started" },
+        { "id": "flags-50m", "title": "Feature flags at 50M MAU", "status": "not_started" },
+        { "id": "modularize-200", "title": "Modularize a 200-dev app", "status": "not_started" },
+        { "id": "upi-checkout", "title": "UPI / checkout client", "status": "not_started" },
+        { "id": "image-cdn", "title": "Image / video pipeline at scale", "status": "not_started" },
+        { "id": "search", "title": "In-app search (debounce, ranking, offline)", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "dsa",
+      "title": "DSA (India product + FAANG)",
+      "items": [
+        { "id": "arrays-two-pointers", "title": "Arrays, two pointers, sliding window", "status": "not_started" },
+        { "id": "strings-hash", "title": "Strings, hash maps, anagrams, prefix", "status": "not_started" },
+        { "id": "binary-search", "title": "Binary search on answers / rotated array", "status": "not_started" },
+        { "id": "stack-queue", "title": "Stack, monotonic stack, queue, deque", "status": "not_started" },
+        { "id": "heap-intervals", "title": "Heap, intervals, merge K, top K", "status": "not_started" },
+        { "id": "linked-list", "title": "Linked list: reverse, cycle, merge", "status": "not_started" },
+        { "id": "trees-bst", "title": "Trees, BST, LCA, serialize", "status": "not_started" },
+        { "id": "graphs-bfs-dfs", "title": "Graphs BFS/DFS, topo, grid", "status": "not_started" },
+        { "id": "dp-core", "title": "DP core (knapsack/LIS/string) at medium", "status": "not_started" },
+        { "id": "lru-lfu-dsa", "title": "LRU/LFU as a coding problem", "status": "not_started" },
+        { "id": "swift-dsa-muscle", "title": "Write mediums in Swift (not only Python)", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "swiftui-lab",
+      "title": "SwiftUI lab builds",
+      "items": [
+        { "id": "lab-a-catalog", "title": "A — Paginated catalog", "status": "not_started" },
+        { "id": "lab-b-notes", "title": "B — Offline notes", "status": "not_started" },
+        { "id": "lab-c-tracker", "title": "C — Order tracker", "status": "not_started" },
+        { "id": "lab-d-gallery", "title": "D — Image gallery", "status": "not_started" },
+        { "id": "lab-e-hybrid", "title": "E — UIKit hybrid", "status": "not_started" },
+        { "id": "lab-f-stretch", "title": "F — Widget / Live Activity / SPM module", "status": "not_started" }
+      ]
+    },
+    {
+      "id": "behavioral",
+      "title": "Behavioral / HM (India)",
+      "items": [
+        { "id": "disagree", "title": "Disagree with a technical decision", "status": "not_started" },
+        { "id": "incident", "title": "Production incident / crash spike", "status": "not_started" },
+        { "id": "mentor", "title": "Mentored someone; raised PR quality", "status": "not_started" },
+        { "id": "deadline", "title": "Missed a deadline; what you cut", "status": "not_started" },
+        { "id": "owned-module", "title": "Owned a module others shipped on", "status": "not_started" },
+        { "id": "why-leaving", "title": "Why leaving / why this company — without ranting", "status": "not_started" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+---
+description: Daily iOS interview prep protocol for this lab
+alwaysApply: true
+---
+
+# iOS prep lab
+
+This repo is the source of truth. Do not invent a second tracker in chat.
+
+## Three tracks
+
+1. **From code** — After Swift work in this repo, generate a short question list from the diff. Unstarred questions stay in that day’s `drills/` folder.
+2. **Daily 3** — Pick 3 `not_started` items following `pick_order` in `tracker/topics.json` (Swift fundamentals and UIKit before SwiftUI/design/DSA). Each prompt is code: 15–40 lines in `drills/YYYY-MM-DD/`. Review the files, not a paste-only answer. If a real interview question has no row, add one.
+3. **SwiftUI lab** — One concept at a time in `swiftui-lab/`. Spec first, then the user implements, then review. Tag starred cards `swiftui`.
+
+## Starring and ticking
+
+- User marks **super important** → add `tracker/super-important/<slug>.md` using `_card-template.md`.
+- Set that topic’s status to `starred` (or `drilled` if they finished it but did not star).
+- Keep the super-important list short. Do not dump every question into it.
+- Never dual-write Notion during a normal day. Weekly export only: `notion/README.md`.
+
+## Session shape
+
+Assign → user codes in repo → review → star/tick → stop. Do not assign 30 questions.
