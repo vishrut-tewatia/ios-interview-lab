@@ -13,13 +13,13 @@ This repo is the source of truth. Do not invent a second tracker in chat.
 2. **Daily 3** — Pick 3 `not_started` items following `pick_order` in `tracker/topics.json` (Swift fundamentals and UIKit before SwiftUI/design/DSA). Each prompt is code: 15–40 lines in `drills/YYYY-MM-DD/`. Review the files, not a paste-only answer. If a real interview question has no row, add one.
 3. **SwiftUI lab** — One concept at a time in `swiftui-lab/`. Spec first, then the user implements, then review. Tag starred cards `swiftui`.
 
-## Starring and ticking
+## Daily 3 gates (do not skip)
 
-- User marks **super important** → add `tracker/super-important/<slug>.md` using `_card-template.md`.
-- Set that topic’s status to `starred` (or `drilled` if they finished it but did not star).
-- Keep the super-important list short. Do not dump every question into it.
-- Never dual-write Notion during a normal day. Weekly export only: `notion/README.md`.
+1. Pick 3 → mark `in_progress` → copy `drills/_template/` to `drills/YYYY-MM-DD/`.
+2. **Teach first.** Deep theory + examples for all 3 in chat and `00-theory.md`. No code prompts yet.
+3. **Doubts.** Ask what is unclear. Answer until the user says doubts are cleared (or none).
+4. **Then** write `00-brief.md` Write prompts and stamp `01`/`02`/`03` `.swift` files. Stop. User codes.
+5. Review files → star/tick → stop.
 
-## Session shape
-
-Assign → user codes in repo → review → star/tick → stop. Do not assign 30 questions.
+Do not present questions in the same turn as theory. Do not assign 30 questions.
+Never dual-write Notion on a normal day. Super-important stays a short card list (`_card-template.md`).

@@ -13,13 +13,13 @@ Senior iOS / SDE-2 prep. India, 4+ YOE. **This repo is the tracker.** Notion get
 | `notion/outbox/` | Weekly markdown to paste into Notion. |
 | `scripts/weekly-notion-export.sh` | Builds that outbox file. |
 
-## A normal day (~60–90 min)
+## A normal day
 
-1. Say **“daily 3”** in this project chat. I pick 3 uncovered topics in `pick_order` (Swift + UIKit fundamentals first) and write `drills/YYYY-MM-DD/`.
-2. You implement in the three `.swift` files.
-3. I review those files. You mark anything **super important**; I add a card and tick `topics.json`.
-4. Optional: SwiftUI concept spec → you implement in `swiftui-lab/` → review → maybe one starred card.
-5. If you also coded other Swift that day: I add questions to `from-code.md`. Star only the real ones.
+1. Say **“daily 3”**. I pick 3 uncovered topics in `pick_order` and teach them: deep theory + examples in chat and `drills/YYYY-MM-DD/00-theory.md`. **No questions yet.**
+2. I ask for doubts. We loop until you say they are cleared (or you have none).
+3. Only then I write the 3 code prompts (`00-brief.md` + `01`/`02`/`03` `.swift` files). You implement.
+4. I review those files. You mark **super important**; I add a card and tick `topics.json`.
+5. Optional: SwiftUI lab the same day. Other Swift you wrote → `from-code.md`.
 
 Weekly: `./scripts/weekly-notion-export.sh` then paste `notion/outbox/` into Notion. No live dual-write.
 
